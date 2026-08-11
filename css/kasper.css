@@ -777,7 +777,57 @@ header nav .menu-icon {
     color: #777;
     line-height: 2;
 }
-
+            /* Footer */
+footer {
+    padding-top: calc(var(--section-padding) / 2);
+    padding-bottom: calc(var(--section-padding) / 2);
+    background-image: url("../images/subscribe.jpg");
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0 0 0 / 70%);
+}
+footer .container {
+    position: relative;
+}
+footer img {
+    margin-bottom: 20px;
+}
+footer p:not(.copyright) {
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    width: fit-content;
+    margin: 20px auto;
+    font-size: 22px;
+}
+footer .social-icons {
+    margin-bottom: 60px;
+}
+footer .social-icons a {
+    color: white;
+    text-decoration: none;
+}
+footer .social-icons i {
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+footer .social-icons i:hover {
+    color: var(--main-color);
+}
+footer .copyright {
+    font-size: 18px;
+}
+footer .copyright span {
+    color: var(--main-color);
+    font-weight: bold;
+}
             /* ******************* */
 /* Small */
 @media (min-width:768px){
