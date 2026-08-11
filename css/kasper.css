@@ -888,10 +888,21 @@ width:1170px;
 
     .landing .text {
         width: 100%;
+        padding: 40px 30px;
     }
 
     .landing .content {
         max-width: 100%;
+    }
+
+    .landing .content h2 {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+
+    .landing .content p {
+        font-size: 14px;
+        line-height: 1.8;
     }
 
     .landing .change-background {
@@ -899,12 +910,35 @@ width:1170px;
     }
 
     .services .srv-box {
-        flex-direction: column;
-        text-align: center;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        text-align: left;
     }
 
     .services .srv-box i {
-        margin: 0 0 30px;
+        flex-shrink: 0;
+        margin: 0;
+    }
+
+    .services .srv-box .text {
+        flex: 1;
+    }
+
+    .services .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services .srv-box {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .services .srv-box i {
+        margin: 0;
+        flex-shrink: 0;
     }
 
     .design .image {
