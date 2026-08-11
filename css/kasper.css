@@ -724,6 +724,59 @@ header nav .menu-icon {
     line-height: 2;
     margin-left: 50px;
 }
+            /* contact */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+.contact form {
+    flex-basis: 70%;
+}
+.contact .main-input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+}
+.contact .main-input:focus {
+    outline: none;
+}
+.contact textarea.main-input {
+    height: 200px;
+    resize: none;
+}
+.contact input[type="submit"] {
+    display: flex;
+    margin-left: auto;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.contact .info {
+    flex-basis: 25%;
+}
+.contact .info h4 {
+    margin-bottom: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.contact .info .phone {
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+}
+.contact .info address {
+    color: #777;
+    line-height: 2;
+}
 
             /* ******************* */
 /* Small */
@@ -823,6 +876,16 @@ width:1170px;
 
     .our-skills .content img{
         margin:0 0 20px;
+    }
+
+    .contact .content {
+        flex-direction: column;
+    }
+
+    .contact .info {
+        order: -1;
+        text-align: center;
+        margin-bottom: 40px;
     }
 }
 
