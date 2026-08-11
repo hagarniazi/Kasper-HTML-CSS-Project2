@@ -360,8 +360,48 @@ header nav .menu-icon {
     text-decoration: none;
     text-transform: uppercase;
 }
-
-
+            /* Video */
+.video {
+    position: relative;
+}
+.video::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0 0 0 / 40%);
+    z-index: 1;
+}
+.video video {
+    width: 100%;
+}
+.video .text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 50px;
+    background-color: var(--transparent-color);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+.video .text h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.video .text p {
+    margin-bottom: 30px;
+}
+.video .text button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
             /* ******************* */
 /* Small */
 @media (min-width:768px){
