@@ -56,7 +56,7 @@ The website is optimized for:
 
 ## 🚀 Live Demo
 
-Coming Soon...
+https://hagarniazi.github.io/Kasper-HTML-CSS-Project2/
 
 ## 📸 Preview
 
